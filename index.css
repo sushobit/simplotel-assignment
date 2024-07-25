@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 60px;
+    padding: 0 20px;
+    position: sticky;
+    top: 0.1px;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    letter-spacing: 4px;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+}
+
+input {
+    display: none;
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+    display: none;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    gap: 48px;
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+li {
+    margin: 0 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.top-container {
+    background-image: url('./img1.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.lorem {
+    color: rgb(255, 255, 255);
+    background-color: rgba(205, 120, 118, 0.75);
+    width: 44%;
+    padding: 40px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 27%;
+    left: 6%;
+    z-index: 40;
+}
+
+.lorem h1 {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2.5px;
+}
+
+
+.lorem p {
+    line-height: 25px;
+    width: 82%;
+    margin-top: 2%;
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        gap: 0;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    nav input:checked~ul.menu {
+        display: flex;
+    }
+    .foodContainer {
+        margin-bottom: 30px;
+    }
+}
+
+
+@media all and (min-width: 481px) and (max-width:768px) {
+    .lorem {
+        padding: 20px;
+        width: 50%;
+    }
+
+    .lorem h1 {
+        font-size: 40px;
+    }
+
+    .lorem p {
+        width: 80%;
+        line-height: 22px;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width:480px) {
+    .lorem {
+        padding: 20px;
+        width: 60%;
+    }
+
+    .lorem h1 {
+        font-size: 30px;
+    }
+
+    .lorem p {
+        width: 100%;
+        line-height: 18px;
+    }
+
+}
+
+#div {
+    height: 110px;
+    background: linear-gradient(to right, rgb(255, 104, 194), rgb(255, 218, 92));
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10;
+}
+
+.linebreak {
+    background-color: rgb(81, 79, 79);
+    height: 15px;
+    border-color: none;
+}
+.bottom-container {
+    background: linear-gradient(to right, rgb(255, 104, 194), rgb(255, 218, 92));
+    height: max-content;
+    text-align: center;
+}
+
+.order {
+    font-size: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    letter-spacing: 6px;
+    margin-bottom: 50px;
+}
+.foodContainer {
+    width: 340px;
+    height: 400px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 0 50px;
+    text-align: center;
+    padding: 20px;
+}
+
+.foodContainer h2 {
+    font-size: large;
+    margin: 10px;
+}
+.foodContainer p {
+    font-weight: 200;
+    font-size: small;
+}
+.image{
+    height: 60%;
+    width: 90%;
+    border-radius: 0 50px 0 0;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.order-button {
+    border-radius: 50px;
+    padding: 20px 70px;
+    margin-top: 80px;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 10%;
+    border: none;
+    background-color: rgb(255, 196, 189);
+}
+
